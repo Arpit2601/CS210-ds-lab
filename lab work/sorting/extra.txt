@@ -1,0 +1,15 @@
+Stable versions of selection sort and quick sort
+
+Better pivot selection for quick sort
+
+Quick sort with multiple pivots
+
+Bottom up version of merge gesort
+
+Sorting on linked lists
+
+During merge and quick sort for small problem size switch to insertion sort
+
+Plot running time of algorithms by generating inputs of various sizes raning from a few to tens of millions.
+
+Try large inputs that are completely sorted or almost sorted
