@@ -65,7 +65,7 @@ class HashMap
         int hashIndex = hashCode(key); 
           
         //find next free space  
-        while(arr[hashIndex] != NULL && arr[hashIndex]->key != key 
+        while(arr[hashIndex] != NULL && arr[hashIndex]->key != key   //if i remove second condition then values with duplicate values can be allowed
                && arr[hashIndex]->key != -1) 
         { 
             hashIndex++; 
@@ -161,7 +161,7 @@ int main()
     h->insertNode(2,3); 
     h->display(); 
     cout << h->sizeofMap() <<endl; 
-    cout << h->deleteNode(2) << endl; 
+  //  cout << h->deleteNode(2) << endl; 
     cout << h->sizeofMap() <<endl; 
     cout << h->isEmpty() << endl; 
     cout << h->get(2); 
