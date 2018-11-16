@@ -55,6 +55,7 @@ void DFS_VISIT(int i,struct vertex_of_graph* graph)
 {
 	//if(vertex_present[i])
 	//{	
+		cout<<(char)(i+97)<<" ";
 		time1++;
 		discovered[i]=time1;
 		color[i]="grey";
@@ -71,7 +72,7 @@ void DFS_VISIT(int i,struct vertex_of_graph* graph)
 			if(color[temp1->node-'a']=="white")
 			{
 				parent[temp1->node-'a']=(char)(i+97);
-				cout<<"("<<(char)(i+97)<<","<<temp1->node<<")"<<"is a tree edge"<<endl;
+				//cout<<"("<<(char)(i+97)<<","<<temp1->node<<")"<<"is a tree edge"<<endl;
 				DFS_VISIT(temp1->node-'a',graph);
 			}
 			temp1=temp1->next;

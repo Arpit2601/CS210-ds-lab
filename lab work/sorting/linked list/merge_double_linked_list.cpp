@@ -1,4 +1,3 @@
-
 // C program for merge sort on doubly linked list 
 #include<stdio.h> 
 #include<stdlib.h> 

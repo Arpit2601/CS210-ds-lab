@@ -70,7 +70,7 @@ void BSF(int vertices,int adj[][100],int distance[],string color[],int parent[],
 	distance[key]=0;push(q,key);color[key]="grey";
 	while(!queue_empty(q))
 	{
-		int j=pop(q);
+		int j=pop(q);cout<<j<<endl;
 		for(int k=1;k<=vertices;k++)
 		{
 			if(adj[j][k]==1 && color[k]=="white")
@@ -113,11 +113,11 @@ int main()
 	int distance[vertices+1];
 	int parent[vertices+1];
 	BSF(vertices,adj,distance,color,parent,7,q);
-	for(int i=1;i<=vertices;i++)
-	{
-		cout<<distance[i]<<" "<<parent[i]<<" "<<color[i]<<endl;
-	}
-	print_path(8,7,parent);
-	cout<<endl;
-	print_path(2,7,parent);
+	// for(int i=1;i<=vertices;i++)
+	// {
+	// 	cout<<distance[i]<<" "<<parent[i]<<" "<<color[i]<<endl;
+	// }
+	// print_path(8,7,parent);
+	// cout<<endl;
+	// print_path(2,7,parent);
 }

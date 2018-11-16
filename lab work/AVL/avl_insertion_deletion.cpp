@@ -248,7 +248,9 @@ int main()
     t.insert(69);
     t.display();
     t.height();
-    // t.remove(5);
+    //only insertion works
+   // t.remove(5);
+    t.height();
     // t.remove(35);
     // t.remove(65);
     // t.remove(89);

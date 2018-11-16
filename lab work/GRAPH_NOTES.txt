@@ -1,0 +1,9 @@
+Classification of tree edges in a graph during DFS
+
+When edge (u,v) is accessed
+1. if color(v)=white (u,v) is tree edge
+2. if color(v)=grey (u,v) is back edge
+3. if color(v)=black and d(v)<d(u) then (u,v) is cross edge
+4. if color(v)=black and d(u)<d(v) then (u,v) is forward edge
+
+if back edge present then graph is cyclic

@@ -155,6 +155,7 @@ void DFS(struct vertex_of_graph* graph)
 	{
 		if(vertex_present[i] && color[i]=="white")
 		{
+			
 			DFS_VISIT(i,graph);
 		}
 	}

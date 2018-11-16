@@ -190,7 +190,9 @@ int main()
 	{
 		if(distance1[i]>=0)
 		{
-			cout<<"distance of "<<(char)(i+97)<<" from "<<x<<" is "<<distance1[i]<<endl;
+			cout<<"distance of "<<(char)(i+97)<<" from "<<x<<" is "<<distance1[i];
+			cout<<"		parent of "<<char(i+97)<<" is "<<(parent[i])<<endl;
 		}
 	}
+	for(int i=0;i<27;i++){cout<<parent[i]<<" ";}
 }

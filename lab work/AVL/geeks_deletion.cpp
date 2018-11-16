@@ -291,6 +291,7 @@ int main()
     preOrder(root); 
   
     root = deleteNode(root, 10); 
+    root = deleteNode(root, -1);
   
     /* The AVL Tree after deletion of 10 
             1 
