@@ -43,7 +43,7 @@ template <class DataType> void bubbleSort(DataType data[]){
 }
 
 
-
+// O(nlogn) in worst case
 template <class DataType> void mergeSortTopDown(DataType data[], const int left, const int right){
 
 	if((right-left)<1){
@@ -157,7 +157,7 @@ template <class DataType> int partition(DataType data[], int left, int right){
 		return(pivotPos);
 }
 
-
+// O(nlogn) expected running time
 template <class DataType> void quickSort(DataType data[], int left, int right){
 	cout<<"Sorting from "<<left<<" to "<<right<<endl;
 	if(right<=left){
@@ -182,6 +182,7 @@ template <class DataType> void quickSort(DataType data[], int left, int right){
 	//printArray(data);
 }
 
+// O(n^2) in worst case
 template <class DataType> void selectionSort(DataType data[]){
 	int i,j;
 	int minIndex;
@@ -205,7 +206,7 @@ template <class DataType> void selectionSort(DataType data[]){
 }
 
 
-
+// O(n^2) algorithm in worst case
 template <class DataType> void insertionSort(DataType data[]){
 
 	int i,j;
