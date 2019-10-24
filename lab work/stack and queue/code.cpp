@@ -9,6 +9,7 @@ typedef struct _stack
 
 node* top=NULL;
 
+// returns the top value in the stack
 int top_value()
 {
 	node* temp=top;
